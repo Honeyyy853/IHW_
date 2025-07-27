@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Prakriti Pulse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Hind:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-leaf"></i>
+                <span>Prakriti Pulse</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="ayurveda.html" class="nav-link">Ayurveda & Yoga</a>
+                <a href="quiz.html" class="nav-link">Know Your Dosha</a>
+                <a href="nutrition.html" class="nav-link">Nutrition</a>
+                <a href="mental-health.html" class="nav-link">Mind Wellness</a>
+                <a href="blog.html" class="nav-link active">Blog</a>
+                <!-- <a href="contact.html" class="nav-link">Contact</a> -->
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Wellness Blog</h1>
+            <p>Insights, tips, and wisdom for your holistic health journey</p>
+        </div>
+    </section>
+
+    <!-- Blog Filters -->
+    <section class="blog-filters">
+        <div class="container">
+            <div class="filter-container">
+                <h3>Filter by Category:</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Articles</button>
+                    <button class="filter-btn" data-filter="vata">Vata</button>
+                    <button class="filter-btn" data-filter="pitta">Pitta</button>
+                    <button class="filter-btn" data-filter="kapha">Kapha</button>
+                    <button class="filter-btn" data-filter="nutrition">Nutrition</button>
+                    <button class="filter-btn" data-filter="yoga">Yoga</button>
+                    <button class="filter-btn" data-filter="mental-health">Mental Health</button>
+                </div>
+            </div>
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Search articles...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Articles -->
+    <section class="blog-articles">
+        <div class="container">
+            <div class="articles-grid" id="articles-grid">
+                
+                <!-- Article 1 -->
+                <article class="article-card" data-category="vata yoga">
+                    <div class="article-image">
+                        <img src="https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Yoga poses for Vata">
+                        <div class="article-category">Vata • Yoga</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>7 Calming Yoga Poses to Balance Your Vata Dosha</h3>
+                        <p>Discover gentle, grounding yoga sequences that help calm the restless Vata energy and promote inner stability and peace.</p>
+                        <div class="article-meta">
+                            <div class="author">
+                                <i class="fas fa-user"></i>
+                                <span>Dr. Priya Sharma</span>
+                            </div>
+                            <div class="date">
+                                <i class="fas fa-calendar"></i>
+                                <span>Jan 15, 2025</span>
+                            </div>
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>5 min read</span>
+                            </div>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card" data-category="nutrition pitta">
+                    <div class="article-image">
+                        <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cooling foods for Pitta">
+                        <div class="article-category">Pitta • Nutrition</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Cooling Foods for Pitta: Beat the Heat Naturally</h3>
+                        <p>Learn about refreshing, cooling foods that help balance excess Pitta dosha and keep your digestive fire in harmony.</p>
+                        <div class="article-meta">
+                            <div class="author">
+                                <i class="fas fa-user"></i>
+                                <span>Chef Ananda</span>
+                            </div>
+                            <div class="date">
+                                <i class="fas fa-calendar"></i>
+                                <span>Jan 12, 2025</span>
+                            </div>
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>7 min read</span>
+                            </div>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card" data-category="kapha mental-health">
+                    <div class="article-image">
+                        <img src="https://images.pexels.com/photos/3822616/pexels-photo-3822616.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Overcoming lethargy">
+                        <div class="article-category">Kapha • Mental Health</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Overcoming Kapha Lethargy: Energizing Practices</h3>
+                        <p>Simple yet effective techniques to combat sluggishness and boost motivation when Kapha dosha is out of balance.</p>
+                        <div class="article-meta">
+                            <div class="author">
+                                <i class="fas fa-user"></i>
+                                <span>Yogi Ramesh</span>
+                            </div>
+                            <div class="date">
+                                <i class="fas fa-calendar"></i>
+                                <span>Jan 10, 2025</span>
+                            </div>
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>6 min read</span>
+                            </div>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="article-card" data-category="nutrition">
+                    <div class="article-image">
+                        <img src="https://images.pexels.com/photos/6489663/pexels-photo-6489663.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Turmeric benefits">
+                        <div class="article-category">Nutrition</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>The Golden Spice: Turmeric's Healing Powers</h3>
+                        <p>Explore the incredible health benefits of turmeric and how to incorporate this powerful anti-inflammatory spice into your daily routine.</p>
+                        <div class="article-meta">
+                            <div class="author">
+                                <i class="fas fa-user"></i>
+                                <span>Dr. Meera Nair</span>
+                            </div>
+                            <div class="date">
+                                <i class="fas fa-calendar"></i>
+                                <span>Jan 8, 2025</span>
+                            </div>
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>8 min read</span>
+                            </div>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="article-card" data-category="mental-health">
+                    <div class="article-image">
+                        <img src="https://images.pexels.com/photos/3822711/pexels-photo-3822711.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Meditation practice">
+                        <div class="article-category">Mental Health</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Mindfulness for Beginners: Start Your Meditation Journey</h3>
+                        <p>A comprehensive guide to starting your meditation practice with simple techniques that anyone can follow.</p>
+                        <div class="article-meta">
+                            <div class="author">
+                                <i class="fas fa-user"></i>
+                                <span>Swami Ananda</span>
+                            </div>
+                            <div class="date">
+                                <i class="fas fa-calendar"></i>
+                                <span>Jan 5, 2025</span>
+                            </div>
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>10 min read</span>
+                            </div>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="article-card" data-category="vata nutrition">
+                    <div class="article-image">
+                        <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Warming foods">
+                        <div class="article-category">Vata • Nutrition</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Warming Winter Foods for Vata Balance</h3>
+                        <p>Nourishing, grounding foods that help stabilize Vata dosha during cold weather and provide deep nourishment.</p>
+                        <div class="article-meta">
+                            <div class="author">
+                                <i class="fas fa-user"></i>
+                                <span>Chef Sunita</span>
+                            </div>
+                            <div class="date">
+                                <i class="fas fa-calendar"></i>
+                                <span>Jan 3, 2025</span>
+                            </div>
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>6 min read</span>
+                            </div>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 7 -->
+                <article class="article-card" data-category="pitta yoga">
+                    <div class="article-image">
+                        <img src="https://images.pexels.com/photos/3822557/pexels-photo-3822557.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cooling yoga">
+                        <div class="article-category">Pitta • Yoga</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Moon Salutations: Cooling Yoga for Pitta Types</h3>
+                        <p>Learn the gentle, cooling practice of Chandra Namaskara to balance excessive heat and intensity in Pitta constitution.</p>
+                        <div class="article-meta">
+                            <div class="author">
+                                <i class="fas fa-user"></i>
+                                <span>Yoga Teacher Kavita</span>
+                            </div>
+                            <div class="date">
+                                <i class="fas fa-calendar"></i>
+                                <span>Dec 30, 2024</span>
+                            </div>
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>7 min read</span>
+                            </div>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 8 -->
+                <article class="article-card" data-category="kapha yoga">
+                    <div class="article-image">
+                        <img src="https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Energizing yoga">
+                        <div class="article-category">Kapha • Yoga</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Dynamic Sun Salutations for Kapha Energy</h3>
+                        <p>Vigorous, heat-building sequences that help stimulate sluggish Kapha energy and promote vitality and motivation.</p>
+                        <div class="article-meta">
+                            <div class="author">
+                                <i class="fas fa-user"></i>
+                                <span>Ashtanga Teacher Dev</span>
+                            </div>
+                            <div class="date">
+                                <i class="fas fa-calendar"></i>
+                                <span>Dec 28, 2024</span>
+                            </div>
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>9 min read</span>
+                            </div>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 9 -->
+                <article class="article-card" data-category="nutrition">
+                    <div class="article-image">
+                        <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Ayurvedic herbs">
+                        <div class="article-category">Nutrition</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Essential Ayurvedic Herbs for Daily Wellness</h3>
+                        <p>A guide to incorporating powerful Ayurvedic herbs like Ashwagandha, Brahmi, and Triphala into your wellness routine.</p>
+                        <div class="article-meta">
+                            <div class="author">
+                                <i class="fas fa-user"></i>
+                                <span>Herbalist Rajesh</span>
+                            </div>
+                            <div class="date">
+                                <i class="fas fa-calendar"></i>
+                                <span>Dec 25, 2024</span>
+                            </div>
+                            <div class="read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>8 min read</span>
+                            </div>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="btn btn-secondary load-more-btn">
+                    <i class="fas fa-plus"></i> Load More Articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <!-- <section class="newsletter-signup">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Stay Updated with Our Wellness Newsletter</h2>
+                    <p>Get the latest articles, tips, and insights delivered to your inbox weekly</p>
+                </div>
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Subscribe
+                        </button>
+                    </div>
+                    <p class="newsletter-disclaimer">
+                        We respect your privacy. Unsubscribe at any time.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section> -->
+
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>Prakriti Pulse</span>
+                </div>
+                <p>Your guide to inner balance through ancient Indian wisdom.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="ayurveda.html">Ayurveda & Yoga</a></li>
+                    <li><a href="quiz.html">Dosha Quiz</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Wellness</h4>
+                <ul>
+                    <li><a href="mental-health.html">Mind Wellness</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                    <!-- <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li> -->
+                </ul>
+            </div>
+            <!-- <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div> -->
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Prakriti Pulse. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+    <script src="blog.js"></script>
+
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--brown-color) 100%);
+            padding: 120px 0 60px;
+            text-align: center;
+            color: var(--light-color);
+        }
+
+        .page-header h1 {
+            font-family: var(--font-primary);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-filters {
+            background: var(--light-color);
+            padding: 60px 0 40px;
+            border-bottom: 1px solid rgba(163, 196, 188, 0.2);
+        }
+
+        .filter-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .filter-container h3 {
+            font-family: var(--font-primary);
+            color: var(--dark-color);
+            font-size: 1.2rem;
+        }
+
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        .filter-btn {
+            padding: 0.6rem 1.2rem;
+            border: 2px solid var(--primary-color);
+            background: transparent;
+            color: var(--primary-color);
+            border-radius: 25px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: var(--light-color);
+            transform: translateY(-2px);
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-box {
+            position: relative;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .search-box i {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-light);
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 0.8rem 1rem 0.8rem 3rem;
+            border: 2px solid var(--secondary-color);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .blog-articles {
+            background: var(--cream-color);
+            padding: 60px 0;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .article-card {
+            background: var(--light-color);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .article-image {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .article-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .article-card:hover .article-image img {
+            transform: scale(1.05);
+        }
+
+        .article-category {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: rgba(163, 196, 188, 0.9);
+            color: var(--light-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            backdrop-filter: blur(10px);
+        }
+
+        .article-content {
+            padding: 2rem;
+        }
+
+        .article-content h3 {
+            font-family: var(--font-primary);
+            font-size: 1.3rem;
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .article-content p {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .article-meta > div {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .article-meta i {
+            color: var(--primary-color);
+        }
+
+        .read-more {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: var(--accent-color);
+            transform: translateX(5px);
+        }
+
+        .load-more-container {
+            text-align: center;
+        }
+
+        .load-more-btn {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+        }
+
+        .newsletter-signup {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            padding: 60px 0;
+            color: var(--light-color);
+        }
+
+        .newsletter-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .newsletter-text h2 {
+            font-family: var(--font-primary);
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .newsletter-text p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .newsletter-form .form-group {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+        }
+
+        .newsletter-form input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+        }
+
+        .newsletter-form button {
+            padding: 1rem 1.5rem;
+            background: var(--light-color);
+            color: var(--primary-color);
+            border: none;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .newsletter-form button:hover {
+            background: var(--cream-color);
+            transform: translateY(-2px);
+        }
+
+        .newsletter-disclaimer {
+            font-size: 0.85rem;
+            opacity: 0.8;
+            margin: 0;
+        }
+
+        /* Filter and Search Functionality */
+        .article-card.hidden {
+            display: none;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-light);
+        }
+
+        .no-results i {
+            font-size: 4rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .no-results h3 {
+            font-family: var(--font-primary);
+            color: var(--dark-color);
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .filter-buttons {
+                justify-content: center;
+            }
+
+            .filter-btn {
+                font-size: 0.8rem;
+                padding: 0.5rem 1rem;
+            }
+
+            .articles-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: flex-start;
+            }
+
+            .newsletter-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+            }
+
+            .newsletter-text h2 {
+                font-size: 1.8rem;
+            }
+
+            .newsletter-form .form-group {
+                flex-direction: column;
+            }
+
+            .newsletter-form input,
+            .newsletter-form button {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .article-content {
+                padding: 1.5rem;
+            }
+
+            .article-content h3 {
+                font-size: 1.1rem;
+            }
+
+            .filter-container {
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+</body>
+</html>

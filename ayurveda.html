@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayurveda & Yoga - Prakriti Pulse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Hind:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-leaf"></i>
+                <span>Prakriti Pulse</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="ayurveda.html" class="nav-link active">Ayurveda & Yoga</a>
+                <a href="quiz.html" class="nav-link">Know Your Dosha</a>
+                <a href="nutrition.html" class="nav-link">Nutrition</a>
+                <a href="mental-health.html" class="nav-link">Mind Wellness</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <!-- <a href="contact.html" class="nav-link">Contact</a> -->
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Ayurveda & Yoga</h1>
+            <p>Discover the ancient science of life and the path to holistic wellness</p>
+        </div>
+    </section>
+
+    <!-- Ayurveda Introduction -->
+    <section class="ayurveda-intro">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>What is Ayurveda?</h2>
+                    <div class="meaning-box">
+                        <h3><span class="highlight">Ayur</span> + <span class="highlight">Veda</span></h3>
+                        <p><strong>Ayur</strong> = Life &nbsp;&nbsp;&nbsp; <strong>Veda</strong> = Knowledge</p>
+                        <p class="definition">The Science of Life</p>
+                    </div>
+                    <p>
+                        Ayurveda is an ancient Indian system of medicine that focuses on maintaining health 
+                        through the balance of mind, body, and spirit. This 5,000-year-old holistic approach 
+                        emphasizes prevention and treatment through lifestyle practices, dietary guidelines, 
+                        herbal remedies, and spiritual wellness.
+                    </p>
+                    <p>
+                        Unlike modern medicine that often treats symptoms, Ayurveda addresses the root cause 
+                        of imbalance and works to restore harmony between the individual and their environment.
+                    </p>
+                </div>
+                <div class="intro-visual">
+                    <div class="ayurveda-symbol">
+                        <i class="fas fa-yin-yang"></i>
+                        <div class="symbol-text">Balance</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Five Elements -->
+    <section class="elements-section">
+        <div class="container">
+            <h2 class="section-title">The Five Elements (Pancha Mahabhuta)</h2>
+            <p class="section-description">
+                According to Ayurveda, everything in the universe is composed of five fundamental elements
+            </p>
+            <div class="elements-grid">
+                <div class="element-card">
+                    <div class="element-icon earth">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Earth (Prithvi)</h3>
+                    <p>Represents stability, structure, and the solid aspects of matter. Provides foundation and support.</p>
+                </div>
+                <div class="element-card">
+                    <div class="element-icon water">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Water (Jal)</h3>
+                    <p>Symbolizes flow, cohesion, and the liquid aspects. Essential for all life processes and emotions.</p>
+                </div>
+                <div class="element-card">
+                    <div class="element-icon fire">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Fire (Agni)</h3>
+                    <p>Represents transformation, heat, and energy. Governs digestion, metabolism, and inner radiance.</p>
+                </div>
+                <div class="element-card">
+                    <div class="element-icon air">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>Air (Vayu)</h3>
+                    <p>Embodies movement, breath, and circulation. Controls all bodily movements and nervous system.</p>
+                </div>
+                <div class="element-card">
+                    <div class="element-icon ether">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Ether (Akash)</h3>
+                    <p>The space element, representing consciousness and communication. Creates room for all other elements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three Doshas -->
+    <section class="doshas-section">
+        <div class="container">
+            <h2 class="section-title">The Three Doshas</h2>
+            <p class="section-description">
+                The doshas are biological energies found throughout the human body and mind. 
+                They govern all physical and mental processes.
+            </p>
+            
+            <!-- Vata Dosha -->
+            <div class="dosha-card vata">
+                <div class="dosha-header">
+                    <div class="dosha-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <div class="dosha-info">
+                        <h3>Vata Dosha</h3>
+                        <p class="dosha-elements">Ether + Air</p>
+                    </div>
+                </div>
+                <div class="dosha-content">
+                    <div class="characteristics">
+                        <h4>Characteristics:</h4>
+                        <div class="char-grid">
+                            <span class="char-item">Dryness</span>
+                            <span class="char-item">Lightness</span>
+                            <span class="char-item">Coldness</span>
+                            <span class="char-item">Roughness</span>
+                            <span class="char-item">Subtlety</span>
+                            <span class="char-item">Mobility</span>
+                        </div>
+                    </div>
+                    <div class="dosha-description">
+                        <p>
+                            Vata governs movement, circulation, breathing, and nervous system function. 
+                            People with dominant Vata tend to be creative, energetic, and quick-thinking, 
+                            but may experience anxiety, restlessness, and irregular digestion when imbalanced.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pitta Dosha -->
+            <div class="dosha-card pitta">
+                <div class="dosha-header">
+                    <div class="dosha-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="dosha-info">
+                        <h3>Pitta Dosha</h3>
+                        <p class="dosha-elements">Fire + Water</p>
+                    </div>
+                </div>
+                <div class="dosha-content">
+                    <div class="characteristics">
+                        <h4>Characteristics:</h4>
+                        <div class="char-grid">
+                            <span class="char-item">Heat</span>
+                            <span class="char-item">Sharpness</span>
+                            <span class="char-item">Lightness</span>
+                            <span class="char-item">Liquidity</span>
+                            <span class="char-item">Slight Oiliness</span>
+                            <span class="char-item">Intensity</span>
+                        </div>
+                    </div>
+                    <div class="dosha-description">
+                        <p>
+                            Pitta controls digestion, metabolism, and body temperature. 
+                            Pitta-dominant individuals are typically focused, ambitious, and intelligent, 
+                            but may experience anger, inflammation, and digestive issues when out of balance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kapha Dosha -->
+            <div class="dosha-card kapha">
+                <div class="dosha-header">
+                    <div class="dosha-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <div class="dosha-info">
+                        <h3>Kapha Dosha</h3>
+                        <p class="dosha-elements">Earth + Water</p>
+                    </div>
+                </div>
+                <div class="dosha-content">
+                    <div class="characteristics">
+                        <h4>Characteristics:</h4>
+                        <div class="char-grid">
+                            <span class="char-item">Heaviness</span>
+                            <span class="char-item">Slowness</span>
+                            <span class="char-item">Coolness</span>
+                            <span class="char-item">Oiliness</span>
+                            <span class="char-item">Smoothness</span>
+                            <span class="char-item">Stability</span>
+                        </div>
+                    </div>
+                    <div class="dosha-description">
+                        <p>
+                            Kapha provides structure, stability, and immunity to the body. 
+                            Kapha-predominant people are typically calm, loving, and stable, 
+                            but may experience sluggishness, weight gain, and congestion when imbalanced.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yoga Section -->
+    <section class="yoga-section">
+        <div class="container">
+            <h2 class="section-title">Yoga: Union of Body, Mind & Spirit</h2>
+            <div class="yoga-content">
+                <div class="yoga-text">
+                    <p>
+                        Yoga, derived from the Sanskrit word "Yuj" meaning "to unite," is a comprehensive 
+                        system that harmonizes physical postures, breathing techniques, meditation, and 
+                        ethical principles to achieve optimal health and spiritual growth.
+                    </p>
+                    <div class="yoga-benefits">
+                        <h3>Benefits of Regular Yoga Practice:</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Improves flexibility and strength</li>
+                            <li><i class="fas fa-check"></i> Reduces stress and anxiety</li>
+                            <li><i class="fas fa-check"></i> Enhances mental clarity and focus</li>
+                            <li><i class="fas fa-check"></i> Balances the nervous system</li>
+                            <li><i class="fas fa-check"></i> Promotes better sleep quality</li>
+                            <li><i class="fas fa-check"></i> Supports cardiovascular health</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="yoga-visual">
+                    <div class="yoga-poses">
+                        <div class="pose-icon">
+                            <i class="fas fa-praying-hands"></i>
+                            <span>Meditation</span>
+                        </div>
+                        <div class="pose-icon">
+                            <i class="fas fa-lungs"></i>
+                            <span>Pranayama</span>
+                        </div>
+                        <div class="pose-icon">
+                            <i class="fas fa-user"></i>
+                            <span>Asanas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Discover Your Dosha?</h2>
+                <p>Take our comprehensive assessment to understand your unique body constitution and receive personalized wellness recommendations.</p>
+                <a href="quiz.html" class="btn btn-primary">Take the Quiz</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>Prakriti Pulse</span>
+                    </div>
+                    <p>Your guide to inner balance through ancient Indian wisdom.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="ayurveda.html">Ayurveda & Yoga</a></li>
+                        <li><a href="quiz.html">Dosha Quiz</a></li>
+                        <li><a href="nutrition.html">Nutrition</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Wellness</h4>
+                    <ul>
+                        <li><a href="mental-health.html">Mind Wellness</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <!-- <li><a href="contact.html">Contact</a></li> -->
+                        <!-- <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li> -->
+                    </ul>
+                </div>
+                <!-- <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div> -->
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Prakriti Pulse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            padding: 120px 0 60px;
+            text-align: center;
+            color: var(--light-color);
+        }
+
+        .page-header h1 {
+            font-family: var(--font-primary);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .nav-link.active {
+            color: var(--primary-color);
+        }
+
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .ayurveda-intro {
+            background: var(--light-color);
+            padding: 80px 0;
+        }
+
+        .intro-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .intro-text h2 {
+            font-family: var(--font-primary);
+            font-size: 2.5rem;
+            color: var(--dark-color);
+            margin-bottom: 2rem;
+        }
+
+        .meaning-box {
+            background: linear-gradient(135deg, var(--cream-color), var(--secondary-color));
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin: 2rem 0;
+            text-align: center;
+            box-shadow: var(--shadow-light);
+        }
+
+        .meaning-box h3 {
+            font-family: var(--font-primary);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .definition {
+            font-family: var(--font-primary);
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .intro-visual {
+            display: flex;
+            justify-content: center;
+        }
+
+        .ayurveda-symbol {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--light-color);
+            box-shadow: var(--shadow);
+        }
+
+        .ayurveda-symbol i {
+            font-size: 4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .symbol-text {
+            font-family: var(--font-primary);
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .elements-section {
+            background: var(--cream-color);
+            padding: 80px 0;
+        }
+
+        .section-description {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .elements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .element-card {
+            background: var(--light-color);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .element-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .element-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: var(--light-color);
+        }
+
+        .element-icon i {
+            font-size: 2rem;
+        }
+
+        .element-icon.earth { background: linear-gradient(45deg, #8B4513, #D2691E); }
+        .element-icon.water { background: linear-gradient(45deg, #4682B4, #87CEEB); }
+        .element-icon.fire { background: linear-gradient(45deg, #FF4500, #FFD700); }
+        .element-icon.air { background: linear-gradient(45deg, #B0C4DE, #E6E6FA); }
+        .element-icon.ether { background: linear-gradient(45deg, #483D8B, #9370DB); }
+
+        .element-card h3 {
+            font-family: var(--font-primary);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+
+        .doshas-section {
+            background: var(--light-color);
+            padding: 80px 0;
+        }
+
+        .dosha-card {
+            background: var(--light-color);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            border-left: 5px solid;
+        }
+
+        .dosha-card.vata { border-left-color: #87CEEB; }
+        .dosha-card.pitta { border-left-color: #FF6347; }
+        .dosha-card.kapha { border-left-color: #90EE90; }
+
+        .dosha-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .dosha-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1.5rem;
+            color: var(--light-color);
+        }
+
+        .vata .dosha-icon { background: linear-gradient(45deg, #87CEEB, #B0C4DE); }
+        .pitta .dosha-icon { background: linear-gradient(45deg, #FF6347, #FFD700); }
+        .kapha .dosha-icon { background: linear-gradient(45deg, #90EE90, #98FB98); }
+
+        .dosha-info h3 {
+            font-family: var(--font-primary);
+            font-size: 1.8rem;
+            color: var(--dark-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .dosha-elements {
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        .dosha-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+        }
+
+        .characteristics h4 {
+            font-family: var(--font-primary);
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+
+        .char-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+        }
+
+        .char-item {
+            background: var(--cream-color);
+            padding: 0.5rem;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .yoga-section {
+            background: var(--cream-color);
+            padding: 80px 0;
+        }
+
+        .yoga-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .yoga-benefits {
+            margin-top: 2rem;
+        }
+
+        .yoga-benefits h3 {
+            font-family: var(--font-primary);
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+        }
+
+        .yoga-benefits ul {
+            list-style: none;
+        }
+
+        .yoga-benefits li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .yoga-benefits li i {
+            color: var(--primary-color);
+            margin-right: 0.5rem;
+        }
+
+        .yoga-poses {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .pose-icon {
+            background: var(--light-color);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .pose-icon i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .pose-icon span {
+            font-weight: 500;
+            color: var(--dark-color);
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            padding: 60px 0;
+            text-align: center;
+            color: var(--light-color);
+        }
+
+        .cta-content h2 {
+            font-family: var(--font-primary);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-content p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            .intro-content,
+            .yoga-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .dosha-content {
+                grid-template-columns: 1fr;
+            }
+
+            .char-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .intro-text h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</body>
+</html>
